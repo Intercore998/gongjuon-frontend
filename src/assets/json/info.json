@@ -1,0 +1,18 @@
+[
+  {
+    "image": "/images/info/guide_map_icon.png",
+    "des": "관람 안내 지도",
+    "path": "#"
+  },
+  {
+    "image": "/images/info/commentary_icon.png",
+    "des": "공산성 해설사",
+    "path": "#"
+  },
+
+  {
+    "image": "/images/info/booking_icon.png",
+    "des": "프로그램 예약",
+    "path": "#"
+  }
+]

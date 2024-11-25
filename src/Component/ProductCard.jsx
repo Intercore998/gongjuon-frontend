@@ -15,7 +15,7 @@ const ProductCard = ({title,content,tags }) => {
                             <p className={"text-3xl"}>content</p>
                         </div>
                         <div className={"flex gap-2"}>
-                            {tags.map((tag, index) => {
+                            {tags.map((tag) => {
                                 return(<p>{tag}</p>)
                             })}
                         </div>

@@ -1,0 +1,22 @@
+[
+  {
+    "link": "https://www.mcst.go.kr/kor/main.jsp",
+    "img": "/images/office/ms_logo.png",
+    "alt": "문화체육관광부"
+  },
+  {
+    "link": "https://korean.visitkorea.or.kr/main/main.do",
+    "img": "/images/office/kor_logo.png",
+    "alt": "한국관광공사"
+  },
+  {
+    "link": "https://www.gongju.go.kr/kr/index.do",
+    "img": "/images/office/gongju_logo.png",
+    "alt": "공주시"
+  },
+  {
+    "link": "https://www.gongjucf.or.kr/index.do",
+    "img": "/images/office/gongjucf_logo.png",
+    "alt": "공주문화관광재단"
+  }
+]

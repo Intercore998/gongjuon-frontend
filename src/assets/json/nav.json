@@ -1,0 +1,62 @@
+[
+  {
+    "label": "공주온밤",
+    "depth": [
+      {
+        "label": "공주온밤이란?",
+        "path": "/gongjuon",
+        "migration": false
+      },
+      {
+        "label": "공주시 관광",
+        "path": "https://www.gongju.go.kr/tour/index.do",
+        "migration": true
+      },
+      {
+        "label": "공주시 야간관광 캐릭터",
+        "path": "/character",
+        "migration": false
+      }
+    ]
+  },
+  {
+    "label": "프로그램 안내",
+    "depth": [
+      {
+        "label": "프로그램",
+        "path": "/program",
+        "migration": false
+      }
+    ]
+  },
+  {
+    "label": "온밤공지",
+    "depth": [
+      {
+        "label": "새소식",
+        "path": "/notice",
+        "migration": false
+      },
+      {
+        "label": "이벤트",
+        "path": "/event",
+        "migration" : false
+      },
+      {
+        "label": "FAQ",
+        "path": "/faq",
+        "migration": false
+      }
+    ]
+  },
+  {
+    "label": "사전신청하기",
+    "depth": [
+      {
+        "label": "프로그램 사전신청",
+        "path": "/booking",
+        "migration": false
+      }
+    ]
+  }
+]
