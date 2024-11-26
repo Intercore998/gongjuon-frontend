@@ -10,7 +10,7 @@ const noticeRouter = ()=> {
         },
         {
             path:":id",
-            element:<Suspense fallback={null}></Suspense>,
+            element:<Suspense fallback={null}><Main /></Suspense>,
         },
         {
             path:"create",

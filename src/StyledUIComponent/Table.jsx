@@ -1,38 +1,41 @@
-import {Card} from "@material-tailwind/react";
-
-
-const Table = ({headers, rows})=>{
-
-    return(
-            <table className="table-auto w-full border-collapse border border-gray-300">
-                <thead className="bg-gray-200">
-                <tr>
-                    {headers.map((header, index) => (
-                        header ?
-                        <th key={index} className="border border-gray-300 px-4 py-2 text-left">
+const Table = ({ nameMap, data }) => {
+    return (
+        <div className="overflow-hidden rounded-lg shadow-md">
+            <table className="w-full text-left table-auto border-collapse">
+                <thead>
+                <tr className="bg-gray-200">
+                    {Object.values(nameMap).map((header, index) => (
+                        <th key={index} className="px-4 py-2 font-semibold text-gray-800 border-b">
                             {header}
-                        </th> : null)
-                    )}
+                        </th>
+                    ))}
                 </tr>
                 </thead>
                 <tbody>
-                {rows.map((row, rowIndex) => (
-                    <tr key={rowIndex} className="hover:bg-gray-100">
-                        {headers.map((header, colIndex) =>
-                            header ? ( // 빈 헤더에 대응되는 열은 생략
-                            <td
-                                key={colIndex}
-                                className="border border-gray-300 px-4 py-2"
-                            >
-                                {row[header.toLowerCase()] || ""}
-                            </td>
-                        ) : null
-                        )}
+                {data.length > 0 ? (
+                    data.map((row, rowIndex) => (
+                        <tr key={rowIndex} className="even:bg-gray-50">
+                            {Object.keys(nameMap).map((key, colIndex) => (
+                                <td key={colIndex} className="px-4 py-2 text-gray-600 border-b">
+                                    {row[key]}
+                                </td>
+                            ))}
+                        </tr>
+                    ))
+                ) : (
+                    <tr>
+                        <td
+                            colSpan={Object.keys(nameMap).length}
+                            className="px-4 py-6 text-center text-gray-500"
+                        >
+                            No data available.
+                        </td>
                     </tr>
-                ))}
+                )}
                 </tbody>
             </table>
-    )
-}
+        </div>
+    );
+};
 
 export default Table;

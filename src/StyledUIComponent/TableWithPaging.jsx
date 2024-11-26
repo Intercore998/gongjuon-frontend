@@ -1,17 +1,17 @@
-import {Card, CardBody} from "@material-tailwind/react";
-import Table from "./Table.jsx";
-import Paging from "./Paging.jsx";
+import Table from "./Table";
+import Paging from "./Paging";
 
-
-const TableWithPaging = ({headers, rows, currentPage, totalPage}) => {
-    return(
-        <Card className="h-full w-full overflow-scroll">
-            <CardBody>
-                <Table headers={headers} rows={rows} />
-            </CardBody>
-            <Paging currentPage={currentPage} totalPage={totalPage} />
-        </Card>
-    )
-}
+const TableWithPaging = ({ nameMap, data, pagingInfo, onPageChange }) => {
+    return (
+        <div className="flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md">
+            <Table nameMap={nameMap} data={data} />
+            <Paging
+                currentPage={pagingInfo.currentPage}
+                totalPage={pagingInfo.totalPages}
+                onPageChange={onPageChange}
+            />
+        </div>
+    );
+};
 
 export default TableWithPaging;

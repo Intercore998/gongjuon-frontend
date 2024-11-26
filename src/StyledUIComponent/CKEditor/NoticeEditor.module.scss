@@ -1,0 +1,83 @@
+.secWrap {
+  position: relative;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 3% 5% 5%;
+
+  overflow: hidden;
+}
+
+.secWrap__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitBtn {
+  margin-top: 10px;
+
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #aa8420;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+.ckeditor__container {
+  width: 100%;
+}
+
+.formBox {
+  width: 100%;
+  & label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+  }
+}
+
+.titleInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  background-color: #fff;
+
+  font-size: 16px;
+  color: #333;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}

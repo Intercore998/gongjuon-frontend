@@ -1,0 +1,221 @@
+.pathWrap {
+  width: 100%;
+  height: 40px;
+
+  background-color: #d9d9d9;
+
+  &__textBox {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    & span {
+      font-size: 16px;
+    }
+  }
+}
+
+.secWrap {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3% 5% 5%;
+  overflow: hidden;
+
+  border-radius: 8px;
+}
+
+.secWrap__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+}
+
+.mheader {
+  margin-bottom: 40px;
+
+  &__title {
+    position: relative;
+    width: 100%;
+
+    // margin-bottom: 40px;
+
+    font-size: calc(18px + 1.4vw);
+    line-height: 56px;
+
+    letter-spacing: -0.7px;
+
+    font-weight: 500;
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   right: 0;
+
+    //   height: 2px;
+    //   width: 100%;
+    //   max-width: 100px;
+    //   background-color: #380779;
+    //   bottom: -30px;
+
+    //   margin: 0 auto;
+    // }
+  }
+}
+
+.noticeContent {
+  width: 100%;
+
+  color: #010101;
+  line-height: 2;
+
+  padding: 28px 16px;
+
+  border-bottom: 1px solid #595959;
+
+  // & h2 {
+  //   font-size: 28px;
+  // }
+
+  // & h3 {
+  //   font-size: 24px;
+  // }
+  // & h4 {
+  //   font-size: 20px;
+  // }
+  // & p {
+  //   font-size: 16px;
+  // }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.notice__title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 10px;
+
+  font-weight: 500;
+
+  border-bottom: 2px solid #010101;
+
+  & span {
+    &:first-child {
+      width: 100%;
+      font-size: calc(18px + 0.6vw);
+      text-align: center;
+    }
+    &:last-child {
+      text-align: end;
+      font-size: calc(10px + 0.3vw);
+      color: #777777;
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column; /* 요소를 수직으로 배치 */
+  width: 100%;
+
+  padding: 4px 10px;
+
+  border-bottom: 2px solid #010101;
+}
+.arrow {
+  font-size: 1rem;
+  color: #010101;
+  text-decoration: none;
+
+  padding: 4px 0; /* 배경색이 잘 보이도록 여백 추가 */
+  border-radius: 4px; /* 둥근 모서리 추가 */
+  & span:last-child {
+    margin-left: 10px;
+  }
+  &:hover {
+    background-color: #d6d6d69a; /* 배경색 변경 */
+  }
+}
+
+.notArrow {
+  color: #888; /* 링크가 없을 때는 회색 */
+  cursor: not-allowed;
+
+  padding: 4px 0; /* 배경색이 잘 보이도록 여백 추가 */
+  border-radius: 4px; /* 둥근 모서리 추가 */
+  & span:last-child {
+    margin-left: 10px;
+  }
+  &:hover {
+    background-color: #d6d6d69a; /* 배경색 변경 */
+  }
+}
+
+.detailBtnWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  margin-top: 8px;
+}
+
+.detailBtn {
+  display: inline-block;
+  color: white;
+  background-color: #444;
+
+  border-radius: 4px;
+
+  padding: 4px 10px;
+
+  cursor: pointer;
+  &:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+.detailBtnCenter {
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .noticeContent {
+    width: 100%;
+    color: #444;
+    line-height: 1.6;
+
+    padding: 16px;
+
+    font-size: 14px;
+
+    // & h2 {
+    //   font-size: 24px;
+    // }
+
+    // & h3 {
+    //   font-size: 20px;
+    // }
+    // & h4 {
+    //   font-size: 18px;
+    // }
+    // & p {
+    //   font-size: 16px;
+    // }
+  }
+}

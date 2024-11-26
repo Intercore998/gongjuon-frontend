@@ -4,7 +4,7 @@ import {createBrowserRouter} from "react-router-dom";
 import adminRouter from "@/router/adminRouter.jsx";
 import bookingRouter from "@/router/bookingRouter.jsx";
 import programRouter from "@/router/programRouter.jsx";
-import eventRouter from "@/Router/eventRouter.jsx";
+import newsRouter from "@/Router/newsRouter.jsx";
 
 const CommonLayout = lazy(() => import("../Layout/CommonLayout.jsx"));
 
@@ -24,7 +24,7 @@ const root = createBrowserRouter([
             {path:"character",element:<Suspense fallback={null}><Character/></Suspense> },
             {path:"faq",element:<Suspense fallback={null}><FAQ /></Suspense> },
             {path:"notice",children:noticeRouter()},
-            {path:"event", children:eventRouter()},
+            {path:"news", children:newsRouter()},
             {path:"admin",children:adminRouter()},
             {path:"booking",children:bookingRouter()},
             {path:"program",children:programRouter()},

@@ -63,8 +63,8 @@ const HeaderNav = () => {
                 </div>
             </nav>
             <div
-                className={`w-full bg-white h-[300px] fixed z-30 transition-all duration-300 ${
-                    isNavOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-10px]"
+                className={`w-full bg-white h-[300px] fixed transition-all duration-300 ${
+                    isNavOpen ? "opacity-100 translate-y-0 z-30" : "opacity-0 translate-y-[-10px] -z-20"
                 }`}
                 onMouseLeave={handleMouseLeave}
                 onAnimationEnd={handleAnimationEnd}

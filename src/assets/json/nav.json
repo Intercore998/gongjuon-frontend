@@ -38,8 +38,8 @@
         "migration": false
       },
       {
-        "label": "이벤트",
-        "path": "/event",
+        "label": "뉴스",
+        "path": "/news",
         "migration" : false
       },
       {
